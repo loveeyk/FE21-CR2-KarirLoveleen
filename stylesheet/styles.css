@@ -61,6 +61,11 @@ body {
 .navbar {
   background: black;
   color: #f2eeee;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  list-style: none;
+  overflow: auto;
 }
 .navbar__link {
   padding: 1rem;
@@ -77,6 +82,12 @@ body {
   border-bottom: 1px solid black;
 }
 
+/** NAVBAR - mobile **/
+@media (max-width: 480px) {
+  .navbar {
+    justify-content: center;
+  }
+}
 /** DATE **/
 .date-row {
   padding: 2rem 0;
@@ -160,6 +171,9 @@ body {
   }
   .main-wrapper .content-section__imagewrapper {
     width: 80%;
+  }
+  .main-wrapper .content-section__heading {
+    text-align: center;
   }
 }
 /** FOOTER **//*# sourceMappingURL=styles.css.map */

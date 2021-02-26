@@ -84,7 +84,12 @@ body {
 
 .navbar {
     background: black;
-    color: rgb(242, 238, 238);
+    color: #f2eeee;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    list-style: none;
+    overflow: auto;
     &__link {
         padding: 1rem;
         display: inline-block;
@@ -98,6 +103,15 @@ body {
             border-top: 1px solid black;
             border-bottom: 1px solid black;
         }
+    }
+}
+
+
+/** NAVBAR - mobile **/
+
+@media(max-width: $mobile-size) {
+    .navbar {
+        justify-content: center;
     }
 }
 
@@ -193,6 +207,9 @@ body {
         }
         .content-section__imagewrapper {
             width: 80%;
+        }
+        .content-section__heading {
+            text-align: center;
         }
     }
 }
