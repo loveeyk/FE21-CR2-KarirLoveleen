@@ -11,6 +11,7 @@ $accent1: #bf0a0c;
 $accent2: #cacaca;
 $font-family: 'Open Sans',
 sans-serif;
+$font-size: large;
 $mobile-size: 480px;
 * {
     margin: 0;
@@ -115,7 +116,14 @@ body {
     background: white;
     .content-section {
         &__row {}
-        &__heading {}
+        &__heading {
+            p {
+                background-color: darkgrey;
+                margin: 16px;
+                padding: 10px;
+                font-size: $font-size;
+            }
+        }
         &__content {
             display: inline-flex;
             height: inherit;
@@ -125,11 +133,25 @@ body {
         &__imagewrapper {
             display: inline-block;
             margin: 1rem;
+            p {
+                background-color: black;
+                color: $font-color2;
+            }
         }
         &__image {
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+    }
+    .banner-section {
+        &__imagewrapper {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            &__image {
+                width: 100%;
+            }
         }
     }
 }
@@ -140,6 +162,9 @@ body {
 @media(max-width: $mobile-size) {
     .main-wrapper {
         margin: 0;
+    }
+    .banner-section {
+        display: none;
     }
 }
 
