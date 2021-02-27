@@ -61,7 +61,7 @@ body {
     background: $theme_color;
     padding: 3rem 1rem;
     overflow-x: hidden;
-    border-bottom: 1px solid $accent1;
+    border-bottom: 1px solid $accent2;
     &__image-wrapper {
         display: inline-block;
         img {
@@ -100,6 +100,11 @@ body {
         border-top: 1px solid transparent;
         border-bottom: 1px solid transparent;
         &:hover {
+            background: $theme_color;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        &--active {
             background: $theme_color;
             border-top: 1px solid black;
             border-bottom: 1px solid black;
@@ -187,6 +192,10 @@ body {
                 font-weight: bolder;
                 /* overflow: hidden; */
                 text-align: center;
+            }
+            a {
+                display: contents;
+                text-decoration: none;
             }
         }
         &__image {

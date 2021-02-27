@@ -26,7 +26,8 @@
     <!-- NAV -->
     <nav>
         <ul class="navbar">
-            <li><a class="navbar__link" href="#">Home</a></li>
+            <li><a class="navbar__link navbar__link--active" href="index.html">Home</a></li>
+            <li><a class="navbar__link" href="article.html">News</a></li>
             <li><a class="navbar__link" href="#">Tech</a></li>
             <li><a class="navbar__link" href="#">Culture</a></li>
             <li><a class="navbar__link" href="#">Video</a></li>
@@ -35,87 +36,108 @@
 
     <!-- DATE -->
     <div class="date-row">
-        <span class="date-row__date" id="Date">Sunday, 28.02.2021</span></div>
+        <span class="date-row__date" id="Date">Sunday, 28.02.2021</span>
+    </div>
 
     <!-- MAIN -->
-    <div class="main-wrapper">
+    <main>
+        <div class="main-wrapper">
 
-        <!-- TOP NEWS -->
+            <!-- TOP NEWS -->
 
-        <div class="content-section">
-            <div class="content-section__row">
-                <div class="content-section__heading">
-                    <p>Top News</p>
+            <div class="content-section">
+                <div class="content-section__row">
+                    <div class="content-section__heading">
+                        <p>Top News</p>
+                    </div>
+                    <div class="content-section__content">
+                        <div class="content-section__imagewrapper third">
+                            <a href="article.html"> <img class="content-section__image" src="img/iphone.png" />
+                                <p>All the reasons to avoid purchasing an Iphone</p>
+                            </a>
+
+                        </div>
+                        <div class="content-section__imagewrapper third">
+                            <a href="article.html"><img class="content-section__image" src="img/musk.jpg" />
+                                <p>Elon Musk smokes cigarette in space</p>
+                            </a>
+                        </div>
+                        <div class="content-section__imagewrapper third">
+                            <a href="article.html"><img class="content-section__image" src="img/jeff.png" />
+                                <p>Lex Luthor or the boy next door?</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="content-section__content">
-                    <div class="content-section__imagewrapper third"><img class="content-section__image" src="img/iphone.png" />
-                        <p>All the reasons to avoid purchasing an Iphone</p>
+
+                <!-- POPULAR  -->
+
+                <div class="content-section__row">
+                    <div class="content-section__heading">
+                        <p>Popular</p>
                     </div>
-                    <div class="content-section__imagewrapper third"><img class="content-section__image" src="img/musk.jpg" />
-                        <p>Elon Musk smokes cigarette in space</p>
-                    </div>
-                    <div class="content-section__imagewrapper third"><img class="content-section__image" src="img/jeff.png" />
-                        <p>Lex Luthor or the boy next door?</p>
+                    <div class="content-section__content">
+                        <div class="content-section__imagewrapper third">
+                            <a href="article.html"><img class="content-section__image" src="img/phone.png" />
+                                <!-- TODO: P muss in imagewrapper sein -->
+                                <p>Spotify raises limit of offline songs to 10,000 per device</p>
+                            </a>
+                        </div>
+                        <div class="content-section__imagewrapper third">
+                            <a href="article.html"><img class="content-section__image" src="img/nasa.png" />
+                                <p>Popular holiday destinations for this Christmas</p>
+                            </a>
+                        </div>
+                        <div class="content-section__imagewrapper third">
+                            <a href="article.html"><img class="content-section__image" src="img/smart.png" />
+                                <p>Smart power distribution tells you when to stop watching Netflix</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Banner -->
+
+                <div class="content-section__row hide-on-mobile">
+                    <div class="content-section__content full">
+                        <div class="content-section__imagewrapper full">
+                            <a class="content-section__link" href="https://www.codefactory.wien"><img class="content-section__image" src="img/banner-3.png" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Further News -->
+                <div class="content-section__row">
+                    <div class="content-section__heading">
+                        <p>Further News</p>
+                    </div>
+                    <div class="content-section__content">
+                        <div class="content-section__imagewrapper half">
+                            <a href="article.html"><img class="content-section__image" src="img/snowden.jpg" />
+                                <p>Why Javascript is the perfect technology for you</p>
+                            </a>
+                        </div>
+                        <div class="content-section__imagewrapper half">
+                            <a href="article.html"><img class="content-section__image" src="img/one.png" />
+                                <p>OnePlus announces new solar-powered earphones</p>
+                            </a>
+                        </div>
+                        <div class="content-section__imagewrapper half">
+                            <a href="article.html"><img class="content-section__image" src="img/polar.png" />
+                                <p>Polar's watches watch you when you sleep</p>
+                            </a>
+                        </div>
+                        <div class="content-section__imagewrapper half">
+                            <a href="article.html"><img class="content-section__image" src="img/eu.png" />
+                                <p>10 ways to keep your files safe</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- POPULAR  -->
-
-            <div class="content-section__row">
-                <div class="content-section__heading">
-                    <p>Popular</p>
-                </div>
-                <div class="content-section__content">
-                    <div class="content-section__imagewrapper third"><img class="content-section__image" src="img/phone.png" />
-                        <!-- TODO: P muss in imagewrapper sein -->
-                        <p>Spotify raises limit of offline songs to 10,000 per device</p>
-                    </div>
-                    <div class="content-section__imagewrapper third"><img class="content-section__image" src="img/nasa.png" />
-                        <p>Popular holiday destinations for this Christmas</p>
-                    </div>
-                    <div class="content-section__imagewrapper third"><img class="content-section__image" src="img/smart.png" />
-                        <p>Smart power distribution tells you when to stop watching Netflix</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Banner -->
-
-            <div class="content-section__row hide-on-mobile">
-                <div class="content-section__content full">
-                    <div class="content-section__imagewrapper full">
-                        <a class="content-section__link" href="https://www.codefactory.wien"><img class="content-section__image" src="img/banner-3.png" /></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Further News -->
-            <div class="content-section__row">
-                <div class="content-section__heading">
-                    <p>Further News</p>
-                </div>
-                <div class="content-section__content">
-                    <div class="content-section__imagewrapper half"><img class="content-section__image" src="img/snowden.jpg" />
-                        <p>Why Javascript is the perfect technology for you</p>
-                    </div>
-                    <div class="content-section__imagewrapper half"><img class="content-section__image" src="img/one.png" />
-                        <p>OnePlus announces new solar-powered earphones</p>
-                    </div>
-                    <div class="content-section__imagewrapper half"><img class="content-section__image" src="img/polar.png" />
-                        <p>Polar's watches watch you when you sleep</p>
-                    </div>
-                    <div class="content-section__imagewrapper half"><img class="content-section__image" src="img/eu.png" />
-                        <p>10 ways to keep your files safe</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
-
-
-
-    </div>
+    </main>
 
     <!-- FOOTER -->
     <div class="footer">

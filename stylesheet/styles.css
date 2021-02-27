@@ -40,7 +40,7 @@ body {
   background: #5b1919;
   padding: 3rem 1rem;
   overflow-x: hidden;
-  border-bottom: 1px solid #bf0a0c;
+  border-bottom: 1px solid #cacaca;
 }
 .header__image-wrapper {
   display: inline-block;
@@ -77,6 +77,11 @@ body {
   border-bottom: 1px solid transparent;
 }
 .navbar__link:hover {
+  background: #5b1919;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.navbar__link--active {
   background: #5b1919;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -153,6 +158,10 @@ body {
   font-weight: bolder;
   /* overflow: hidden; */
   text-align: center;
+}
+.main-wrapper .content-section__imagewrapper a {
+  display: contents;
+  text-decoration: none;
 }
 .main-wrapper .content-section__image {
   width: 100%;
