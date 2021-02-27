@@ -221,6 +221,7 @@ body {
   font-size: xx-small;
 }
 
+/** FOOTER - mobile **/
 @media (max-width: 480px) {
   .footer {
     position: relative;
