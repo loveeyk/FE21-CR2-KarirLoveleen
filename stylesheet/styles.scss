@@ -3,6 +3,7 @@
 /** GLOBALS **/
 
 $theme_color: #5b1919;
+$theme_background: #e8e8e8;
 $font-color: rgb(31,
 31,
 31);
@@ -22,7 +23,7 @@ $mobile-size: 480px;
 body {
     color: $font-color;
     font-family: $font-family;
-    background: $theme_color;
+    background: $theme_background;
 }
 
 
@@ -60,7 +61,7 @@ body {
     background: $theme_color;
     padding: 3rem 1rem;
     overflow-x: hidden;
-    border-bottom: 3px solid $accent1;
+    border-bottom: 1px solid $accent1;
     &__image-wrapper {
         display: inline-block;
         img {
@@ -124,7 +125,6 @@ body {
     justify-content: flex-end;
     align-items: center;
     &__date {
-        color: $font-color2;
         margin: 0 1rem;
     }
 }
@@ -182,9 +182,11 @@ body {
             p {
                 background-color: black;
                 color: white;
-                padding: 0.5rem 0.2rem 1rem 0.2rem;
+                padding: 1rem 0.5rem;
                 font-size: small;
                 font-weight: bolder;
+                /* overflow: hidden; */
+                text-align: center;
             }
         }
         &__image {

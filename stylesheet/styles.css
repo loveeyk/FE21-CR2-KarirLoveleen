@@ -8,7 +8,7 @@
 body {
   color: #1f1f1f;
   font-family: "Open Sans", sans-serif;
-  background: #5b1919;
+  background: #e8e8e8;
 }
 
 /** reusable **/
@@ -40,7 +40,7 @@ body {
   background: #5b1919;
   padding: 3rem 1rem;
   overflow-x: hidden;
-  border-bottom: 3px solid #bf0a0c;
+  border-bottom: 1px solid #bf0a0c;
 }
 .header__image-wrapper {
   display: inline-block;
@@ -96,7 +96,6 @@ body {
   align-items: center;
 }
 .date-row__date {
-  color: white;
   margin: 0 1rem;
 }
 
@@ -149,9 +148,11 @@ body {
 .main-wrapper .content-section__imagewrapper p {
   background-color: black;
   color: white;
-  padding: 0.5rem 0.2rem 1rem 0.2rem;
+  padding: 1rem 0.5rem;
   font-size: small;
   font-weight: bolder;
+  /* overflow: hidden; */
+  text-align: center;
 }
 .main-wrapper .content-section__image {
   width: 100%;
