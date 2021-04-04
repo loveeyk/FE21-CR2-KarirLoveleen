@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box!important;
 }
 
 body {
@@ -24,6 +25,12 @@ body {
 
 .third {
     width: 24%;
+    @media(max-width: 768px) {
+        width: 40%;
+    }
+    @media(max-width:480px) {
+        width: 80%;
+    }
 }
 
 .half {
@@ -32,6 +39,11 @@ body {
 
 .full {
     width: 90%;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -141,9 +153,43 @@ body {
 /** MAIN **/
 
 .main-wrapper {
-    margin: 0 2rem 20vw;
+    //margin: 0 2rem 20vw;
     /**because of fixed footer 20vw on bottom, remove if footer not fixed **/
-    background: white;
+}
+
+.content_wrapper {
+    @media(max-width: 768px) {
+        margin: 0;
+        flex-flow: column wrap;
+        li {
+            width: 100%!important;
+        }
+    }
+    margin: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    li {
+        padding: 1rem;
+        width: 50%;
+    }
+    &__img {
+        background: url("https://websiteedu.com/wp-content/uploads/2020/01/Media-Queries-for-Mobile-and-Tablet-740x414.jpg");
+        height: 300px;
+        background-size: cover;
+    }
+    #image1 {
+        background: url("https://images.pexels.com/photos/3936421/pexels-photo-3936421.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")!important;
+        background-size: cover!important;
+    }
+    #image2 {
+        background: url("https://images.pexels.com/photos/163358/war-desert-guns-gunshow-163358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")!important;
+        background-size: cover!important;
+    }
+    #image3 {
+        background: url("https://images.pexels.com/photos/1739855/pexels-photo-1739855.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")!important;
+        background-size: cover!important;
+    }
 }
 
 .main-wrapper .content-section__row {
@@ -207,6 +253,41 @@ body {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+}
+
+.main-wrapper__content {
+    display: flex;
+    flex-direction: column;
+    ul {
+        text-decoration: none;
+    }
+}
+
+.main-wrapper__hero {
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/hero.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    background-attachment: fixed;
+    h3 {
+        text-shadow: #333;
+        color: white;
+        /* text-shadow: 1px 1px black; */
+        font-size: 2rem;
+        font-weight: 200;
+        font-size: 3rem;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        background: #ffffff6e;
+        padding: 1rem;
+        color: #823939;
+        border: 1px solid #ffffffb8;
+        text-align: center;
+    }
 }
 
 
